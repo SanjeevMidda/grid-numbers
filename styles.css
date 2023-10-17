@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 500ms;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h3:hover {
+  transform: scale(1.5);
+  color: blue;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  width: 70vw;
+  height: 70vh;
+
+  text-align: center;
+  grid-template-areas:
+    "a b b b b c "
+    "f f d d e c"
+    "f f h h e c"
+    "f f g g g g"
+    "i i i i i i";
+}
+
+.one {
+  grid-area: a;
+  background-color: blue;
+}
+
+.two {
+  grid-area: b;
+  background-color: green;
+}
+
+.three {
+  grid-area: c;
+  background-color: pink;
+}
+
+.four {
+  grid-area: d;
+  background-color: yellow;
+}
+
+.five {
+  grid-area: e;
+  background-color: brown;
+}
+
+.six {
+  grid-area: f;
+  background-color: grey;
+}
+
+.seven {
+  grid-area: g;
+  background-color: black;
+}
+
+.eight {
+  grid-area: h;
+  background-color: orange;
+}
+
+.nine {
+  grid-area: i;
+  background-color: red;
+}
